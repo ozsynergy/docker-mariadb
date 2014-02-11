@@ -1,6 +1,6 @@
 USER=${USER:-super}
-PASS=${PASS:-$(pwgen -s -1 16)}
-
+#PASS=${PASS:-$(pwgen -s -1 16)}
+PASS="password1"
 pre_start_action() {
   # Echo out info to later obtain by running `docker logs container_name`
   echo "MARIADB_USER=$USER"
