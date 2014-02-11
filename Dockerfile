@@ -36,7 +36,6 @@ EXPOSE 3306
 ADD scripts /scripts
 RUN chmod +x /scripts/start.sh
 RUN touch /firstrun
-
-/bin/bash 
+ 
 
 ENTRYPOINT ["/scripts/start.sh"]
